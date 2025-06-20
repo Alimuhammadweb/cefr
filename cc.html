@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Rasm Yuklash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="image-container">
+    <img src="./11063787e2607b94780b6f23aae09af1.pdf" alt="Responsive rasm">
+  </div>
+
+  <script>
+    // Foydalanuvchi saytga kirganda confirm oynasi chiqadi
+    window.onload = function() {
+      const yuklabOlsinmi = confirm("Rasmni yuklab olasizmi?");
+      if (yuklabOlsinmi) {
+        const link = document.createElement("a");
+        link.href = "./11063787e2607b94780b6f23aae09af1.pdf";     // bu yerdagi rasm manzilini o‘zgartiring
+        link.download = "./11063787e2607b94780b6f23aae09af1.pdf"; // yuklab olinadigan fayl nomi
+        link.click(); // yuklab olishni boshlaydi
+      }
+    }
+  </script>
+</body>
+</html>
